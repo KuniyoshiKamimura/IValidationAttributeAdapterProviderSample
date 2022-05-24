@@ -6,6 +6,9 @@ namespace IValidationAttributeAdapterProviderSample.Models.Validation
 {
     public class MyValidationAttributeAdapterProvider : ValidationAttributeAdapterProvider, IValidationAttributeAdapterProvider
     {
+        // This should be called 4 times with each of EmailAddressAttribute/MaxLengthAttribute/MinLengthAttribute/RequiredAttribute but be called only once with EmailAddressAttribute.
+        // If you remove [EmailAddress] from SampleDTO, this will never be called.
+        // So the problem is not because of [EmailAddress] or the order of validation attributes.
         IAttributeAdapter? IValidationAttributeAdapterProvider.GetAttributeAdapter(
             ValidationAttribute attribute,
             IStringLocalizer? stringLocalizer)

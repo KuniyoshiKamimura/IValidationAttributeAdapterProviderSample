@@ -8,6 +8,7 @@ namespace IValidationAttributeAdapterProviderSample.Models.Validation
 {
     public class MyRequiredAttributeAdapter : AttributeAdapterBase<RequiredAttribute>
     {
+        // This should be called but never be called at all.
         public MyRequiredAttributeAdapter(RequiredAttribute attribute, IStringLocalizer? stringLocalizer)
            : base(attribute, stringLocalizer)
         {
@@ -19,6 +20,9 @@ namespace IValidationAttributeAdapterProviderSample.Models.Validation
         {
         }
 
+        // This should be called but never be called at all.
+        // So I can't see the message "{0} is required.".
+        // Instead, the default message "The Test field is required." is shown.
         public override string GetErrorMessage(ModelValidationContextBase validationContext)
         {
             return GetErrorMessage(validationContext.ModelMetadata, validationContext.ModelMetadata.GetDisplayName());
