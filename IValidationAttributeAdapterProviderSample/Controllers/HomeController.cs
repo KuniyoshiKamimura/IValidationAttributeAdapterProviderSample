@@ -18,7 +18,7 @@ namespace IValidationAttributeAdapterProviderSample.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Privacy([FromForm][Bind("Test")] SampleDTO dto)
         {
             return View();
         }
