@@ -9,6 +9,7 @@ namespace IValidationAttributeAdapterProviderSample.Models.Validation
         // This should be called 4 times with each of EmailAddressAttribute/MaxLengthAttribute/MinLengthAttribute/RequiredAttribute but be called only once with EmailAddressAttribute.
         // If you remove [EmailAddress] from SampleDTO, this will never be called.
         // So the problem is not because of [EmailAddress] or the order of validation attributes.
+        // FIXED: By adding "asp-for" to the <input>, this is called as expected.
         IAttributeAdapter? IValidationAttributeAdapterProvider.GetAttributeAdapter(
             ValidationAttribute attribute,
             IStringLocalizer? stringLocalizer)

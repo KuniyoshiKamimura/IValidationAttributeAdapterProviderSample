@@ -1,8 +1,10 @@
-﻿@{
+﻿@model SampleDTO
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <form asp-controller="Home" asp-action="Privacy" method="post">
-    <input type="text" name="Test" />
+    <input type="text" asp-for="Test" />
     <input type="submit" />
 </form>

@@ -8,7 +8,6 @@ namespace IValidationAttributeAdapterProviderSample.Models.Validation
 {
     public class MyEmailAddressAttributeAdapter : AttributeAdapterBase<EmailAddressAttribute>
     {
-        // This is called as expected.
         public MyEmailAddressAttributeAdapter(EmailAddressAttribute attribute, IStringLocalizer? stringLocalizer)
            : base(attribute, stringLocalizer)
         {
@@ -21,8 +20,6 @@ namespace IValidationAttributeAdapterProviderSample.Models.Validation
         {
         }
 
-        // This is called as expected.
-        // And I can see the message "Input the valid mail address.".
         public override string GetErrorMessage(ModelValidationContextBase validationContext)
         {
             return GetErrorMessage(validationContext.ModelMetadata, validationContext.ModelMetadata.GetDisplayName());
