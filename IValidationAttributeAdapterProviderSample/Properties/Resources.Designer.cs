@@ -61,6 +61,105 @@ namespace IValidationAttributeAdapterProviderSample.Properties {
         }
         
         /// <summary>
+        ///   {1}では&apos;{0}&apos;は無効な値です。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_AttemptedValueIsInvalid {
+            get {
+                return ResourceManager.GetString("ModelBinding_AttemptedValueIsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   {0}に対する値が指定されていません。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_MissingBindRequiredValue {
+            get {
+                return ResourceManager.GetString("ModelBinding_MissingBindRequiredValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   必須です。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_MissingKeyOrValue {
+            get {
+                return ResourceManager.GetString("ModelBinding_MissingKeyOrValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   要求にボディの指定が必須です。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_MissingRequestBodyRequiredValue {
+            get {
+                return ResourceManager.GetString("ModelBinding_MissingRequestBodyRequiredValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   &apos;{0}&apos;は無効です。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_NonPropertyAttemptedValueIsInvalid {
+            get {
+                return ResourceManager.GetString("ModelBinding_NonPropertyAttemptedValueIsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   値は無効です。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_NonPropertyUnknownValueIsInvalid {
+            get {
+                return ResourceManager.GetString("ModelBinding_NonPropertyUnknownValueIsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   数字を指定してください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_NonPropertyValueMustBeANumber {
+            get {
+                return ResourceManager.GetString("ModelBinding_NonPropertyValueMustBeANumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   {0}の値は無効です。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_UnknownValueIsInvalid {
+            get {
+                return ResourceManager.GetString("ModelBinding_UnknownValueIsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   &apos;{0}&apos;は無効です。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_ValueIsInvalid {
+            get {
+                return ResourceManager.GetString("ModelBinding_ValueIsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   {0}は数字を指定してください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_ValueMustBeANumber {
+            get {
+                return ResourceManager.GetString("ModelBinding_ValueMustBeANumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   &apos;{0}&apos;は無効です。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ModelBinding_ValueMustNotBeNull {
+            get {
+                return ResourceManager.GetString("ModelBinding_ValueMustNotBeNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Custom message: Input the valid mail address. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ValidationMessageForEmailAddressAttribute {

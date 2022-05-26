@@ -6,7 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews(options =>
 {
     options.ModelMetadataDetailsProviders.Add(new MyValidationMetadataProvider());
-});
+})
+    .AddModelBindingMessagesLocalizer(builder.Services);
 
 var app = builder.Build();
 
