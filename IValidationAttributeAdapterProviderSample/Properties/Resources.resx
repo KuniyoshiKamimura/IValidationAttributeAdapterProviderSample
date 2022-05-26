@@ -117,16 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ValidationMessageForEmailAddress" xml:space="preserve">
-    <value>Input the valid mail address.</value>
+  <data name="ValidationMessageForEmailAddressAttribute" xml:space="preserve">
+    <value>Custom message: Input the valid mail address.</value>
   </data>
-  <data name="ValidationMessageForMaxLength" xml:space="preserve">
-    <value>The length of {0} must be less than or equal to {1}.</value>
+  <data name="ValidationMessageForMaxLengthAttribute" xml:space="preserve">
+    <value>Custom message: The length of {0} must be less than or equal to {1}.</value>
   </data>
-  <data name="ValidationMessageForMinLength" xml:space="preserve">
-    <value>The length of {0} must be greater than or equal to {1}.</value>
+  <data name="ValidationMessageForMinLengthAttribute" xml:space="preserve">
+    <value>Custom message: The length of {0} must be greater than or equal to {1}.</value>
   </data>
-  <data name="ValidationMessageForRequired" xml:space="preserve">
-    <value>{0} is required.</value>
+  <data name="ValidationMessageForRequiredAttribute" xml:space="preserve">
+    <value>Custom message: {0} is required.</value>
   </data>
 </root>

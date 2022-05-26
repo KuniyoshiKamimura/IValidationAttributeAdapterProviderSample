@@ -61,38 +61,38 @@ namespace IValidationAttributeAdapterProviderSample.Properties {
         }
         
         /// <summary>
-        ///   Input the valid mail address. に類似しているローカライズされた文字列を検索します。
+        ///   Custom message: Input the valid mail address. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string ValidationMessageForEmailAddress {
+        internal static string ValidationMessageForEmailAddressAttribute {
             get {
-                return ResourceManager.GetString("ValidationMessageForEmailAddress", resourceCulture);
+                return ResourceManager.GetString("ValidationMessageForEmailAddressAttribute", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   The length of {0} must be less than or equal to {1}. に類似しているローカライズされた文字列を検索します。
+        ///   Custom message: The length of {0} must be less than or equal to {1}. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string ValidationMessageForMaxLength {
+        internal static string ValidationMessageForMaxLengthAttribute {
             get {
-                return ResourceManager.GetString("ValidationMessageForMaxLength", resourceCulture);
+                return ResourceManager.GetString("ValidationMessageForMaxLengthAttribute", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   The length of {0} must be greater than or equal to {1}. に類似しているローカライズされた文字列を検索します。
+        ///   Custom message: The length of {0} must be greater than or equal to {1}. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string ValidationMessageForMinLength {
+        internal static string ValidationMessageForMinLengthAttribute {
             get {
-                return ResourceManager.GetString("ValidationMessageForMinLength", resourceCulture);
+                return ResourceManager.GetString("ValidationMessageForMinLengthAttribute", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   {0} is required. に類似しているローカライズされた文字列を検索します。
+        ///   Custom message: {0} is required. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string ValidationMessageForRequired {
+        internal static string ValidationMessageForRequiredAttribute {
             get {
-                return ResourceManager.GetString("ValidationMessageForRequired", resourceCulture);
+                return ResourceManager.GetString("ValidationMessageForRequiredAttribute", resourceCulture);
             }
         }
     }

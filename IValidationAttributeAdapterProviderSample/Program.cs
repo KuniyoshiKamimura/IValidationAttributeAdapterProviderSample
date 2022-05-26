@@ -1,16 +1,12 @@
 using IValidationAttributeAdapterProviderSample.Models.Validation;
-using IValidationAttributeAdapterProviderSample.Properties;
-using Microsoft.AspNetCore.Mvc.DataAnnotations;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews()
-    .AddDataAnnotationsLocalization(options =>
-    {
-        options.DataAnnotationLocalizerProvider = (type, factory) => factory.Create(typeof(Resources));
-    });
-builder.Services.AddSingleton<IValidationAttributeAdapterProvider, MyValidationAttributeAdapterProvider>();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.ModelMetadataDetailsProviders.Add(new MyValidationMetadataProvider());
+});
 
 var app = builder.Build();
 
